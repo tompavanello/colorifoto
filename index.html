@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ColoriFoto - Transforme Fotos em Arte</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffdf9;
+      color: #333;
+    }
+
+    header {
+      background: #fcd3d3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #ff6b6b;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 1.1em;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    .hero h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff6b6b;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #e65c5c;
+    }
+
+    .examples {
+      padding: 40px 20px;
+      background: #fffaf0;
+      text-align: center;
+    }
+
+    .examples img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .plans {
+      padding: 40px 20px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .plan {
+      background: #fdfdfd;
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    .testimonials {
+      padding: 40px 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin: 20px auto;
+      max-width: 600px;
+      font-style: italic;
+    }
+
+    .capture-form {
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 12px;
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e65c5c;
+    }
+
+    footer {
+      background: #fcd3d3;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ColoriFoto</h1>
+    <p>Transforme suas fotos em desenhos estilo Bobbie Goods para colorir!</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Envie uma foto e receba um desenho para colorir</h2>
+    <p>Transforme memórias em arte! Ideal para crianças, pais, professores e terapeutas.</p>
+    <a href="#form" class="cta-button">Comece agora</a>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="examples">
+    <h2>Veja como fica:</h2>
+    <img src="https://via.placeholder.com/300x300?text=Foto+Original " alt="Foto Original">
+    <img src="https://via.placeholder.com/300x300?text=Desenho+Bobbie+Goods " alt="Ilustração Bobbie Goods">
+  </section>
+
+  <!-- Plans Section -->
+  <section class="plans">
+    <h2>Nossos Planos</h2>
+    <div class="plan">
+      <h3>Gratuito</h3>
+      <p>1 imagem/mês | Estilo padrão | Entrega por WhatsApp</p>
+    </div>
+    <div class="plan">
+      <h3>Premium</h3>
+      <p>R$9,90/mês | Até 5 imagens | Estilos personalizáveis | Download HD</p>
+    </div>
+    <div class="plan">
+      <h3>Profissional</h3>
+      <p>R$29,90/mês | Ilimitadas imagens | Temas especiais | Suporte prioritário</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>O que estão falando:</h2>
+    <div class="testimonial">“Adorei transformar as fotos da minha filha em desenhos! Agora ela se diverte colorindo as imagens da gente.” – Camila R., mãe de Laura (4 anos)</div>
+    <div class="testimonial">“Usei com meus alunos autistas. Eles adoraram ver suas próprias fotos como personagens. Uma ótima ferramenta terapêutica!” – Andréia L., professora especial</div>
+  </section>
+
+  <!-- Capture Form -->
+  <section id="form" class="capture-form">
+    <h2>Comece agora mesmo!</h2>
+    <p>Envie sua foto e receba a versão para colorir em minutos.</p>
+    <form action="#" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome completo" required />
+      <input type="email" name="email" placeholder="Seu melhor e-mail" required />
+      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
+      <select name="uso">
+        <option value="">Para uso pessoal ou profissional?</option>
+        <option value="pessoal">Pessoal</option>
+        <option value="profissional">Profissional</option>
+      </select>
+      <textarea name="foto" rows="3" placeholder="Cole aqui o link da sua foto ou envie pelo WhatsApp"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 ColoriFoto. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
